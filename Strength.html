@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="stylestrength.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Password Strength Checker</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Strength.html">Check Strength</a></li>
+                    <li><a href="/Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="check-section">
+            <h1>Check Your Password Strength</h1>
+            <input type="password" id="password-input" placeholder="Enter your password">
+            <button class="check-btn" onclick="checkPasswordStrength()">Check Strength</button>
+
+            <div class="strength-bar">
+                <div id="strength-level"></div>
+            </div>
+
+            <div class="strength-text" id="strength-text"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Secure Your Data with Strong Passwords!</p>
+    </footer>
+    <script src="/scriptstrength.js"></script>
+    
+</body>
+
+</html>

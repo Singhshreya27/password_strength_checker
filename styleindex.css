@@ -1,0 +1,120 @@
+body {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: #444;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffa07a;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    flex-grow: 1;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+    color: #ffa07a;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.3rem;
+    color: #f1f1f1;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.main-section button {
+    background-color: #ffa07a;
+    color: #1f1f1f;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.main-section button:hover {
+    background-color: #ff7f50;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+/* Additional Responsive Layout */
+@media screen and (max-width: 768px) {
+    .main-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-section p {
+        font-size: 1.1rem;
+    }
+
+    .main-section button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
